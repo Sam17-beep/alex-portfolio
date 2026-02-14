@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "PP Editorial Old";
+  font-weight: 400;
+  font-style: italic;
+  src: url("./fonts/PPEditorialOld-Italic.ttf") format("truetype");
+}
+
+@theme {
+  --font-sans: "Inclusive Sans", sans-serif;
+  --font-editorial: "PP Editorial Old", serif;
+
+  --color-beige: #FCF7EF;
+  --color-beige-moyen: #E9E2D7;
+  --color-charcoal: #1E1E1E;
+  --color-fleur: #EEA5FF;
+  --color-indigo: #90A8FF;
+  --color-pomme: #CDF84F;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-beige);
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: var(--color-charcoal);
+  }
+
+  h1,
+  h2 {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: var(--color-charcoal);
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  small {
+    font-size: 12px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+}
