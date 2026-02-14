@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { NavigationBanner } from "../components/NavigationBanner";
+import { AccordionBanner } from "../components/AccordionBanner";
 import { Tag } from "../components/Tag";
 import { HeroBannerContainer } from "./HeroBannerContainer";
 
@@ -10,28 +10,40 @@ const Projets = () => {
         <HeroBannerContainer>
           <Tag text="Mes projets" />
           <div className="mt-[60px] w-[850px]">
-            Je m’intéresse à l’expérience utilisateur, je suis une vraie geek
+            Je m'intéresse à l'expérience utilisateur, je suis une vraie geek
             des <span className="italic">design systems</span> bien montés et de
             typo qui prennent de la place.
           </div>
         </HeroBannerContainer>
       </div>
       <div>
-        <NavigationBanner
+        <AccordionBanner
           title="MürMür"
-          redirectPath="/murmur"
+          description="Design d'interface"
           className="bg-beige-moyen"
-        />
-        <NavigationBanner
+        >
+          <div className="px-[50px] py-[30px]">
+            <p>Contenu du projet MürMür</p>
+          </div>
+        </AccordionBanner>
+        <AccordionBanner
           title="Barbie & le féminisme?"
-          redirectPath="/barbieetlefeminisme"
+          description="Direction artistique"
           className="bg-beige-moyen"
-        />
-        <NavigationBanner
+        >
+          <div className="px-[50px] py-[30px]">
+            <p>Contenu du projet Barbie & le féminisme?</p>
+          </div>
+        </AccordionBanner>
+        <AccordionBanner
           title="Le parcours du médicament"
-          redirectPath="/leparcoursdumedicament"
+          description="Design d'interface"
           className="bg-beige-moyen"
-        />
+        >
+          <div className="px-[50px] py-[30px]">
+            <p>Contenu du projet Le parcours du médicament</p>
+          </div>
+        </AccordionBanner>
       </div>
     </div>
   );
